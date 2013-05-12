@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bxslider 1</title>
+
+<link href="/demo/3/css/superfish.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<ul class="sf-menu">
+<li class="first"> <a class="current" href="index.html">Home</a>
+<ul>
+<li class="first"><a href="#">Free Mobile Website</a></li>
+<li><a href="#">Premium mobile templates</a></li>
+<li class="last"><a href="#">All devices templates</a></li>
+</ul>
+</li>
+<li><a href="#">templates</a></li>
+<li><a href="#">Demo</a></li>
+<li><a href="index-1.html">company</a></li>
+<li class="last"><a href="#">Contacts</a></li>
+</ul>
+
+
+
+
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/demo/1/js/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- bxSlider Javascript file -->
+<script src="/demo/3/js/superfish.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+   $('ul.sf-menu').superfish({
+hoverClass: 'sfHover', // the class applied to hovered list items
+pathClass: 'overideThisToUse', // the class you have applied to list items that lead to the current page
+pathLevels: 1,  // the number of levels of submenus that remain open or are restored using pathClass
+delay: 800,  // the delay in milliseconds that the mouse can remain outside a submenu without it closing
+animation:  {opacity:'show'}, // an object equivalent to first parameter of jQuery’s .animate() method
+speed:  'normal', // speed of the animation. Equivalent to second parameter of jQuery’s .animate() method
+autoArrows: true, // if true, arrow mark-up generated automatically = cleaner source code at expense of initialisation performance
+dropShadows: true,  // completely disable drop shadows by setting this to false
+disableHI: false, // set to true to disable hoverIntent detection
+onInit: function(){}, // callback function fires once Superfish is initialised – 'this' is the containing ul
+onBeforeShow: function(){},  // callback function fires just before reveal animation begins – 'this' is the ul about to open
+onShow: function(){}, // callback function fires once reveal animation completed – 'this' is the opened ul
+onHide: function(){} // callback function fires after a sub-menu has closed – 'this' is the ul that just closed
+   });
+ });
+</script> 
+</script>
+</body>
+
+</html>

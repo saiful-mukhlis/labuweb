@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<style type="text/css">
+body.login .social .connect-button #twitter_button, body.signup .social .connect-button #twitter_button, body.social .social .connect-button #twitter_button {
+background-color: #28b9dd;
+}
+body.login .accounts-form .btn, body.signup .accounts-form .btn, body.social .accounts-form .btn {
+border-radius: 1px;
+border: 0;
+box-shadow: none;
+text-shadow: none;
+text-transform: uppercase;
+font-size: 13px;
+font-weight: 400;
+text-align: left;
+}
+body.login .social .btn, body.signup .social .btn, body.social .social .btn {
+width: 200px;
+background: #000;
+padding: 1.2em 20px 1em;
+color: #fff;
+line-height: 1;
+margin-bottom: 20px;
+}
+body.login .accounts-form #auth-form .btn, body.signup .accounts-form #auth-form .btn, body.social .accounts-form #auth-form .btn {
+background: #d63c23;
+color: #fff;
+width: auto;
+padding: 1em 2.8em;
+margin-right: 0;
+font-weight: bold;
+letter-spacing: 0;
+font-size: 14px;
+}
+body.login .accounts-form #auth-form input, body.signup .accounts-form #auth-form input, body.social .accounts-form #auth-form input {
+border-radius: 0;
+border: 0;
+padding: .8em 14px;
+box-shadow: none;
+border: 0;
+margin-bottom: 20px;
+width: 343px;
+background: #fff;
+}
+body.login .accounts-form .actions .btn-primary, body.signup .accounts-form .actions .btn-primary, body.social .accounts-form .actions .btn-primary {
+float: right;
+}
+body.login .accounts-form #auth-form input, body.signup .accounts-form #auth-form input, body.social .accounts-form #auth-form input {
+border-radius: 0;
+border: 0;
+padding: .8em 14px;
+box-shadow: none;
+border: 0;
+margin-bottom: 20px;
+width: 343px;
+background: #fff;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, input:focus {
+border: 0;
+box-shadow: none;
+background: transparent;
+border-bottom: 1px solid #ddd;
+border-radius: 1px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+display: inline-block;
+min-height: 34px;
+padding: 6px 9px;
+font-size: 14px;
+line-height: 20px;
+color: #555;
+vertical-align: middle;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: border linear .2s,box-shadow linear .2s;
+-moz-transition: border linear .2s,box-shadow linear .2s;
+-o-transition: border linear .2s,box-shadow linear .2s;
+transition: border linear .2s,box-shadow linear .2s;
+}
+</style>    
+</head>
+
+
+<body class="page login">
+    <div class="navbar">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="https://d17f28g3dsa4vh.cloudfront.net/img/kippt-logo-r.png" width="68"></a>
+        <div class="nav-collapse collapse">
+            <ul class="nav">
+                <!--<li><a href="/features/">Features</a></li>-->
+                <li><a href="/about/">About</a></li>
+                <li><a href="http://blog.kippt.com/">Blog</a></li>
+                <li class="sep"></li><li>
+                </li><li><a href="/login/">Log in</a></li>
+                <li class="signup"><a href="/signup/">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div id="main">
+        
+<div class="container">
+    <div id="login" class="accounts-form row">
+        <div class="span10 offset2">
+            <h1>Log in to your account</h1>
+        </div>
+
+        <div class="span4 offset2 social">
+            <div>
+            <form class="connect-button" name="login" method="post" action="/social/twitter/redirect/" id="twitter-connect-form">
+            <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="KSEBppOGEpzG3DFtijFH6S9dJgSrSYr0"></div>
+            
+            <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn" id="twitter_button"><i class=" icon-twitter"></i>Log in with Twitter</a>
+            </form>
+
+            <form class="connect-button" name="login" method="post" action="/social/facebook/redirect/" id="facebook-connect-form">
+            <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="KSEBppOGEpzG3DFtijFH6S9dJgSrSYr0"></div>
+            
+            <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn" id="facebook_button"><i class="icon-facebook"></i>Log in with Facebook</a>
+            </form>
+            <p><small>Don't have an account? <a href="/signup">Sign up</a></small></p> 
+            </div>
+        </div>
+
+        <div class="span6">
+            <form action="/login" method="POST" id="auth-form"><div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="KSEBppOGEpzG3DFtijFH6S9dJgSrSYr0"></div>
+                
+                <div class="all-errors">
+                    
+                </div>
+                <div class="input">
+                    <input id="id_username" type="text" name="username" maxlength="75" placeholder="Username or email">
+                
+                </div>
+                <div class="input">
+                    <input type="password" name="password" id="id_password" placeholder="Password">
+                    
+                </div>
+                    <div class="actions">
+                        <input type="submit" value="Log In" class="btn btn-primary">
+                        <a href="/accounts/password/reset">Forgot your password?</a> 
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <div id="push"></div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <h5>Product</h5>
+                <a href="http://developers.kippt.com/apps/" target="_blank">App Gallery</a><br>
+                <a href="/plans/">Upgrade to Pro</a><br>
+                <a href="/faq/">Help</a><br>
+                <a href="http://developers.kippt.com/" target="_blank">Developers / API</a>
+            </div>
+            <div class="span3">
+              <h5>About</h5>
+              <a href="/about/">About Kippt</a> <br>
+              <a href="/press/">Press</a> <br>
+              <a href="/privacy/">Privacy</a> <br>
+              <a href="/terms/">Terms</a>
+            </div>
+            <div class="span3">
+              <h5>Community</h5>
+              <a href="http://blog.kippt.com/">Blog</a> <br>
+              <a href="https://twitter.com/kippt/">Twitter</a> <br>
+              <a href="https://facebook.com/kipptapp/">Facebook</a><br>
+              <a href="/about/">Contact Us</a>
+            </div>
+            <div class="span3 lovingly">
+                <p>Handcrafted in San Francisco with Finnish Heritage <span>♥</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+
+
+
+<div class="vimiumReset vimiumHUD" style="right: 150px; opacity: 0; display: none;"></div>
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/demo/8/js/jquery.min.js"><\/script>')</script>
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+});
+</script>    
+</body>
+
+</html>

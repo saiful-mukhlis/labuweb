@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+<style type="text/css">
+
+body{background: #353637;color: #5a6066;height: 100%;display: block;}
+.container-login{margin-left: auto;margin-right: auto;vertical-align: middle;display: inline-block;background: #fff;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+padding: 1em 1em 2em;
+color: inherit;
+font: inherit;
+font-size: 14px;
+overflow: hidden;
+box-sizing: border-box;
+text-align: left;
+cursor: default;
+display: inline-block;
+position: relative;
+    top: 50%;
+    margin-top: -200px;
+}
+.center{text-align: center;vertical-align: middle;display: inline-block;width: 100%;height: 100%;}
+.h100p{height: 100%;vertical-align: middle;}
+.mb30{margin-bottom:30px;}
+.fssp{font-family: 'Source Sans Pro', sans-serif;}
+.fw400{font-weight: 400;}
+.fz24{font-size: 24px;}
+.c349aff{color: #349aff;}
+
+
+
+</style>    
+</head>
+
+<body>
+
+<h1>Template Boostrap</h1>
+
+    <div class="container h100p">
+    	<div class="center">
+    	<div class="container-login flex">
+    		<div class="row mb30">
+  <div class="span3 fssp fw400 fz24 c349aff">WELCOME</div>
+  <div class="span3  fssp fw400 fz24">Login to My Application</div>
+</div>
+      
+
+		<form class="form-inline">
+			<div class="form-inline">
+				  <input type="text" class="" placeholder="Email">
+  <input type="password" class="" placeholder="Password">
+  <button type="submit" class="btn btn-primary">Sign in</button>
+			</div>
+
+<div class="form-inline">
+  <label class="checkbox">
+    <input type="checkbox"> Remember me
+  </label>
+  </div>
+
+    
+</form>
+
+
+      		</div>
+      		</div>
+    </div> <!-- /container -->
+
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/demo/7/js/jquery.min.js"><\/script>')</script>
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+//$(".container-login").bind("load", function () { $(this).fadeToggle(); });
+$('.container-login').hide();
+$('.container-login').fadeIn(3000);
+  console.log($(".container-login").length);
+});
+</script>    
+</body>
+
+</html>
